@@ -120,7 +120,8 @@
     &__links-item {
       margin-bottom: 3em;
       width: auto;
-      align-items: flex-start;
+      align-items: center;
+	  margin-left: 0;
 
       &:first-child {
         max-width: 100%;
