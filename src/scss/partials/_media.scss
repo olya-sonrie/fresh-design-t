@@ -1,0 +1,158 @@
+@media screen and (max-width: 1330px) {
+  .footer__top-contacts .contact-item {
+    padding: 0 1em;
+
+    &__icon {
+      margin: 0 1.5em;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .footer__top {
+
+    &-contacts {
+      flex-direction: column;
+      align-items: flex-end;
+
+      .contact-item:first-child {
+        border-left: none;
+        padding-right: 2.5em;
+      }
+    }
+
+    .social-links {
+      margin-bottom: 1.5em;
+    }
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .footer {
+
+    &__top {
+      flex-direction: column;
+
+      &-description {
+        width: auto;
+        margin: 0 7em 2em 0;
+      }
+
+      &-info {
+        width: auto;
+      }
+
+      &-contacts {
+        flex-direction: row;
+        align-items: center;
+
+        .contact-item:first-child {
+          border-left: 1px solid $primary-color;
+          padding-right: 2.5em;
+        }
+      }
+    }
+
+    .social-links {
+      margin-bottom: 0;
+    }
+
+    &__links-item {
+      width: 29%;
+    }
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .footer {
+
+    &__top {
+
+      &-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: normal;
+        margin: 0 7em 2em 0;
+      }
+
+      &-contacts {
+        flex-direction: column;
+        align-items: center;
+
+        .contact-item:first-child {
+          border-left: none;
+          padding-right: 2.5em;
+        }
+      }
+
+      .social-links {
+        margin-bottom: 1.5em;
+      }
+    }
+
+    &__links-item {
+
+      &:first-child {
+        max-width: 30%;
+      }
+
+      width: auto;
+      margin: 0 auto 0 0;
+      align-items: flex-start;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .footer {
+    padding: 4em 0 2em 4em;
+
+    &__top-description {
+      width: auto;
+      margin-right: 4em;
+    }
+
+    &__top-links {
+      flex-direction: column;
+      margin-right: 4em;
+    }
+
+    &__links-item {
+      margin-bottom: 3em;
+      width: auto;
+      align-items: flex-start;
+
+      &:first-child {
+        max-width: 100%;
+      }
+    }
+
+    &__top-contacts {
+      padding-right: 4em;
+
+      .contact-item {
+        border-left: none;
+        padding: 0;
+        margin: 0 auto;
+
+        &:first-child {
+          padding: 0;
+          margin-bottom: 2em;
+        }
+
+        &__icon {
+          margin-left:  0;
+        }
+      }
+
+      .contact-item_wrapper {
+        flex-direction: column;
+      }
+    }
+
+    &__bottom {
+      flex-direction: column;
+      line-height: 2.5em;
+    }
+  }
+}

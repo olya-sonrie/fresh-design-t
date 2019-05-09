@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  line-height: 2em;
+}
+
+img {
+  user-select: none;
+}
+
+h6 {
+  font-size: 1.3em;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+
+@import "partials/vars",
+        "partials/footer",
+        "partials/media";

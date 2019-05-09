@@ -1,0 +1,120 @@
+.footer {
+  background: $background-color;
+  color: $primary-color;
+  padding: 7em 0 2em 7em;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+
+    &-description {
+      width: 33%;
+    }
+
+    &-info {
+      width: 60%;
+    }
+
+    &-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin: 0 7em 2em 0;
+    }
+
+    &-contacts {
+      background: $background-secondary;
+      display: flex;
+      justify-content: space-between;
+      padding: 2em 7em 2em 2em;
+
+      .contact-item {
+        display: flex;
+        align-items: center;
+        border-left: 1px solid $primary-color;
+        padding: 0 2em;
+
+        &_wrapper {
+          display: flex;
+        }
+
+        &:last-child{
+          padding-right: 0;
+        }
+
+        &__icon {
+          margin: 0 2em;
+        }
+
+        .footer__links-item--text {
+          margin: auto;
+
+          &:hover,
+          &:focus,
+          &:active {
+            color: $primary-color;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+
+  .social-links {
+    display: flex;
+
+    &-item {
+      background: $primary-color;
+      border-radius: 50%;
+      padding: 1em;
+      margin: 0 .7em;
+      width: 1.3em;
+      height: 1.3em;
+      text-align: center;
+      line-height: 1em;
+      transition: $transition-delay linear;
+
+      &:hover,
+      &:focus,
+      &:active {
+        transform: scale(1.1);
+        cursor: pointer;
+      }
+    }
+  }
+
+  .fab {
+    color: $social-link-color;
+    font-size: 1.2em;
+    vertical-align: sub;
+  }
+
+  &__links-item {
+    display: flex;
+    flex-direction: column;
+    width: 27%;
+
+    &--header {
+      margin: 0 0 2em;
+    }
+
+    &--text {
+      margin: 0 0 1em;
+      transition: $transition-delay linear;
+
+      &:hover,
+      &:focus,
+      &:active {
+        color: $social-link-color;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    margin: 2em 7em 0 0;
+  }
+
+}
