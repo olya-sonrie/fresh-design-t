@@ -121,10 +121,11 @@
       margin-bottom: 3em;
       width: auto;
       align-items: center;
-	  margin-left: 0;
+	  margin-left: auto;
 
       &:first-child {
         max-width: 100%;
+		text-align: center;
       }
     }
 

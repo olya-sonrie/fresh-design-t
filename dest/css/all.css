@@ -231,10 +231,11 @@ a {
     margin-bottom: 3em;
     width: auto;
 	align-items: center;
-	margin-left: 0;
+	margin-left: auto;
   }
   .footer__links-item:first-child {
     max-width: 100%;
+	text-align: center;
   }
   .footer__top-contacts {
     padding-right: 4em;
